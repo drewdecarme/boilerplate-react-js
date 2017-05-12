@@ -51,9 +51,9 @@ All credit should be given to the author as he was the one that came up with the
 
 ## Getting Started
   1. Clone the repo `git clone git@github.com:drewdecarme/boilerplate-react-js.git`
-  2. `cd boilerplate-react-js`
-  3. `yarn install` (If you don't have yarn installed, you can install it by following the instructions [here](https://yarnpkg.com/lang/en/docs/install/))
-  4. `yarn start`
+  2. Enter the working directory `cd boilerplate-react-js`
+  3. Install dependencies `yarn install` (If you don't have yarn installed, you can install it by following the instructions [here](https://yarnpkg.com/lang/en/docs/install/))
+  4. Start the solution `yarn start`
 
 ### Common Commands
   1. `yarn start` Starts the development instance
