@@ -23,8 +23,7 @@ All credit should be given to the author as he was the one that came up with the
 2. **Important items weren't included**
     * Redux
     * React Router
-    * CSS Modules
-    * PostCSS
+    * React CSS Modules
     * ESLint
 
 ## Current Features
