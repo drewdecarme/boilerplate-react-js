@@ -7,9 +7,9 @@ export default class Button extends Component {
 
   render() {
     return (
-        <a href="#" className="rc-button" onClick={this.props.onClick}>
-            {this.props.text}
-        </a>
+      <a href='#' className='rc-button' onClick={this.props.onClick}>
+        {this.props.text}
+      </a>
     );
   }
 }

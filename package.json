@@ -11,6 +11,8 @@
   "scripts": {
     "start": "set NODE_ENV=development && webpack-dev-server --open --config ./webpack/webpack.dev.config.js",
     "dev": "set NODE_ENV=development && webpack --progress --config ./webpack/webpack.dev.config.js",
+    "lint": "./node_modules/.bin/eslint \"./app/src/**\" --ext .jsx,.js",
+    "lint:fix": "./node_modules/.bin/eslint \"./app/src/**\" --ext .jsx,.js --fix",
     "build": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.production.config.js",
     "stats": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.stats.config.js --profile --json > ./webpack/stats/stats.json",
     "storybook": "start-storybook -p 6006",
@@ -28,7 +30,7 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^7.0.0",
     "extract-text-webpack-plugin": "~2.0.0",
     "node-sass": "~4.5.0",
