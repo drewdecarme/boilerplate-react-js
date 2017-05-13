@@ -6,6 +6,7 @@ This is a full react project boilerplate configuration that is the basis of any 
 2. [Current Features](#current-features)
 3. [Getting Started](#getting-started)
 4. [React Storybook](#react-storybook)
+5. [Finishing Touches](#finishing-touches)
 
 
 ## Why a boilerplate?
@@ -50,8 +51,8 @@ All credit should be given to the author as he was the one that came up with the
   - [x] Redux
   - [ ] Write temlate on how to include redux in project
   - [ ] React Router
-  - [ ] React CSS Modules
-  - [ ] PostCSS
+  - [x] React CSS Modules
+  - [x] PostCSS
   - [x] ESLint
 
 ## Getting Started
@@ -84,12 +85,14 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 - [ ] Add custom webpack configuration
 - [ ] Add React CSS Modules
 
-## Outstanding work to complete the template
+## Finishing Touches
 - [ ] Configure production webpack configuration with CSS Modules
 - [ ] Install React Router
 - [ ] Implement React Router
 - [ ] Connecting Testing Framework
 - [ ] Write template on how to include Redux into the project
+- [ ] Add Sass linter
+- [ ] Rewrite current features to align with newly added and removed features
 
 
 
