@@ -9,7 +9,7 @@ export default class Button extends Component {
 
   render() {
     return (
-      <a href='#' onClick={this.props.onClick}>
+      <a href='#' onClick={this.props.onClick} styleName='test'>
         {this.props.text}
       </a>
     );

@@ -1,4 +1,16 @@
 {
   "presets": ["es2015", "react"],
-  "plugins": ["react-hot-loader/babel", "transform-class-properties"]
+  "plugins": [
+    "react-hot-loader/babel", 
+    "transform-class-properties",
+    [
+      "react-css-modules",
+      {
+        "generateScopedName": "[local]___[hash:base64:5]",
+        "filetypes": {
+          ".scss": "postcss-scss"
+        }
+      }
+    ]
+  ]
 }
