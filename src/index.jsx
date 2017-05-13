@@ -18,6 +18,6 @@ if (module.hot) {
 function renderWithHotReload(App) {
   render(
     <App />
-    , document.getElementById('starter')
+    , document.getElementById('application')
   );
 }
