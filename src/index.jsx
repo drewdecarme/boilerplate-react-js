@@ -16,7 +16,6 @@ if (module.hot) {
 }
 
 function renderWithHotReload(App) {
-  debugger;
   render(
     <App />
     , document.getElementById('starter')
