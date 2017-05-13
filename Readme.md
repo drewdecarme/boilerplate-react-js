@@ -47,7 +47,8 @@ All credit should be given to the author as he was the one that came up with the
         - [webpack visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 
 ### Things to Add
-  - [ ] Redux
+  - [x] Redux
+  - [ ] Implement Redux in Project
   - [ ] React Router
   - [ ] React CSS Modules
   - [ ] PostCSS
