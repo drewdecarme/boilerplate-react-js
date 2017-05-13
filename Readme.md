@@ -88,11 +88,8 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 - [x] Install React Router
 - [x] Implement React Router
 - [x] Create landing page and sample routes
-- [ ] Add Sass linter
 - [ ] Configure production webpack configuration with CSS Modules
-- [ ] Connecting Testing Framework
 - [ ] Rewrite current features to align with newly added and removed features
-- [ ] Write template on how to include Redux into the project
 
 
 
