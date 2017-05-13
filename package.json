@@ -14,7 +14,7 @@
     "build": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.production.config.js",
     "stats": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.stats.config.js --profile --json > ./webpack/stats/stats.json",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
@@ -26,10 +26,13 @@
     "babel-preset-react": "~6.16.0",
     "css-loader": "~0.25.0",
     "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.0",
     "extract-text-webpack-plugin": "~2.0.0",
     "node-sass": "~4.5.0",
     "react-hot-loader": "~3.0.0-beta.6",
-    "redux-devtools": "^3.4.0",
     "sass-loader": "~6.0.2",
     "style-loader": "~0.13.2",
     "webpack": "~2.2.1",
