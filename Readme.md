@@ -49,8 +49,7 @@ All credit should be given to the author as he was the one that came up with the
 
 ### Things to Add
   - [x] Redux
-  - [ ] Write temlate on how to include redux in project
-  - [ ] React Router
+  - [x] React Router
   - [x] React CSS Modules
   - [x] PostCSS
   - [x] ESLint
@@ -86,14 +85,14 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 - [ ] Add React CSS Modules
 
 ## Finishing Touches
-- [ ] Configure production webpack configuration with CSS Modules
-- [ ] Install React Router
-- [ ] Implement React Router
-- [ ] Connecting Testing Framework
-- [ ] Write template on how to include Redux into the project
+- [x] Install React Router
+- [x] Implement React Router
+- [x] Create landing page and sample routes
 - [ ] Add Sass linter
+- [ ] Configure production webpack configuration with CSS Modules
+- [ ] Connecting Testing Framework
 - [ ] Rewrite current features to align with newly added and removed features
-- [ ] Create landing page and sample routes
+- [ ] Write template on how to include Redux into the project
 
 
 
