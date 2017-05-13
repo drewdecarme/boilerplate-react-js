@@ -93,6 +93,7 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 - [ ] Write template on how to include Redux into the project
 - [ ] Add Sass linter
 - [ ] Rewrite current features to align with newly added and removed features
+- [ ] Create landing page and sample routes
 
 
 
