@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './index.scss';
+
 export default class Button extends Component {
   constructor(props) {
     super(props);
@@ -7,7 +9,7 @@ export default class Button extends Component {
 
   render() {
     return (
-      <a href='#' className='rc-button' onClick={this.props.onClick}>
+      <a href='#' onClick={this.props.onClick}>
         {this.props.text}
       </a>
     );

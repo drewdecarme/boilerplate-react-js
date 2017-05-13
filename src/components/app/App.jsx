@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Logo from './../components/Logo.jsx'; //Component with props but no state
-import Counter from './../components/Counter.jsx';
+import Button from '../button/index.jsx';
 
 export default class App extends Component {
   render() {
     return (
       <div className='app-container'>
-        <Logo />
-        <Counter />
+        <Button text="this is a button!"/>
       </div>
     );
   }

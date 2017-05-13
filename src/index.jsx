@@ -1,16 +1,16 @@
 import { AppContainer } from 'react-hot-loader'; // required
 import React from 'react';
 import { render } from 'react-dom';
-import App from './containers/App.jsx'; // App
+import App from './components/app/App.jsx'; // App
+import './base_styles/base.scss';
 
-import css from './stylesheets/main.scss';
 
 renderWithHotReload(App);
 
 // Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./containers/App.jsx', () => {
-    const App = require('./containers/App.jsx').default;
+  module.hot.accept('./components/app/App.jsx', () => {
+    const App = require('./components/app/App.jsx').default;
     renderWithHotReload(App);
   });
 }
