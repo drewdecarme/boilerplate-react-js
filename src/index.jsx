@@ -1,23 +1,23 @@
 import React from 'react';
-import { AppContainer } from 'react-hot-loader'; // required
-import { render } from 'react-dom';
-import App from './components/app'; // App
+import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+
+import App from './components/app';
 
 import './base_styles/base.scss';
 
-const renderWithHotReload = () => (
-  render(
-    <App />
-    , document.getElementById('application')
+const render = Component => {
+  ReactDOM.render(
+    <AppContainer>
+      <Component />
+    </AppContainer>,
+    document.getElementById('root')
   )
-)
+};
 
-// Hot Module Replacement API
+render(App);
+
 if (module.hot) {
-  module.hot.accept('./components/app.jsx', () => {
-    const App = require('./components/app.jsx').default;
-    renderWithHotReload(App);
-  });
+  module.hot.accept('./components/app', () => { render(App) })
 }
 
-renderWithHotReload(App);
