@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import App from './containers/App.jsx'; // App
 
-import css from './../stylesheets/main.scss';
+import css from './stylesheets/main.scss';
 
 renderWithHotReload(App);
 

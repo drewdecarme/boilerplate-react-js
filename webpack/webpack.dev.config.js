@@ -33,7 +33,7 @@ module.exports = {
       // only- means to only hot reload for successful updates
       'webpack/hot/only-dev-server',
       // Our app main entry            
-      './app/src/index.jsx'
+      './src/index.jsx'
     ]
   },
   output: {
@@ -83,11 +83,11 @@ module.exports = {
       {
         test: /\.jsx$/,
         loader: 'babel-loader',                                   // Use loader instead loaders to be compatible with the next version, webpack 2
-        include: resolve(__dirname, './../app/src')          // Use include instead exclude to improve the build performance
+        include: resolve(__dirname, './../src')          // Use include instead exclude to improve the build performance
       },
       {
         test: /\.scss$/i,
-        include: resolve(__dirname, './../app/stylesheets'),  // Use include instead exclude to improve the build performance
+        include: resolve(__dirname, './../src'),  // Use include instead exclude to improve the build performance
         use: [
           {
             loader: 'style-loader'
