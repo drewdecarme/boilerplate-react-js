@@ -1,6 +1,12 @@
 # ReactJs Boilerplate
 This is a full react project boilerplate configuration that is the basis of any react project that I start. I'm constantly adding to it to make it faster, better, and accommodate any other packages that will help the development pipeline.
 
+## Table of Contents
+1. [Why a boilerplate?](#why-a-boilerplate?)
+2. [Current Features](#current-features)
+3. [Getting Started](#getting-started)
+4. [React Storybook](#react-storybook)
+
 
 ## Why a boilerplate?
 I wanted the ability to be able to start any size React Js project right of the gate and not continually build the asset pipeline from scratch all of the time. I really like yoeman, but a lot of the scaffolds there don't really take advantage of a lot of the things that I would want to add into the project.
