@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import Button from './button/index.jsx';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className='app-container'>
-        <Button text="this is a button!"/>
-      </div>
-    );
-  }
-}
+import Home from './home/index.jsx';
+import Topics from './topics/index.jsx';
+
+const App = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/topics">Topics</Link></li>
+      </ul>
+      <hr/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/topics" component={Topics}/>
+    </div>
+  </Router>
+)
+
+export default App;
