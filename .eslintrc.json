@@ -19,7 +19,6 @@
     "jsx": true
   },
   "rules": {
-    "no-extra-parens": [2, "all"],
     "curly": 2,
     "dot-location": 2,
     "dot-notation": 2,
@@ -41,7 +40,6 @@
         "functions": false,
         "classes": false
     }],
-    "global-require": 2,
     "array-bracket-spacing": [2, "never"],
     "block-spacing": 2,
     "brace-style": 2,
@@ -57,7 +55,7 @@
     "func-call-spacing": [2, "never"],
     "func-style": [2, "expression"],
     "indent": [2, 2],
-    "jsx-quotes": [2, "prefer-single"],
+    "jsx-quotes": [2, "prefer-double"],
     "key-spacing": [2, {
       "beforeColon": false,
       "afterColon": true,
@@ -97,11 +95,6 @@
       "after": true
     }],
     "no-var": 2,
-    "prefer-const": 2,
-    "sort-imports": ["error", {
-        "ignoreCase": true,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-    }]
+    "prefer-const": 2
   }
 }

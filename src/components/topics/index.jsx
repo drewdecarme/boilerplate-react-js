@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './index.scss';
 
-export default class Topics extends Component {
-  render() {
-    return (
-      <div styleName="topics">Welcome Topics</div>
-    );
-  }
-}
+const Topics = () => (
+  <div styleName="topics">Welcome Topics</div>
+)
+
+export default Topics;

@@ -1,11 +1,16 @@
-import { AppContainer } from 'react-hot-loader'; // required
 import React from 'react';
+import { AppContainer } from 'react-hot-loader'; // required
 import { render } from 'react-dom';
-import App from './components/app.jsx'; // App
+import App from './components/app'; // App
+
 import './base_styles/base.scss';
 
-
-renderWithHotReload(App);
+const renderWithHotReload = () => (
+  render(
+    <App />
+    , document.getElementById('application')
+  )
+)
 
 // Hot Module Replacement API
 if (module.hot) {
@@ -15,9 +20,4 @@ if (module.hot) {
   });
 }
 
-function renderWithHotReload(App) {
-  render(
-    <App />
-    , document.getElementById('application')
-  );
-}
+renderWithHotReload(App);

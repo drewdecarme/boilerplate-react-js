@@ -36,7 +36,6 @@
     "eslint-plugin-react": "^7.0.0",
     "extract-text-webpack-plugin": "~2.0.0",
     "node-sass": "~4.5.0",
-    "react-hot-loader": "~3.0.0-beta.6",
     "sass-loader": "~6.0.2",
     "style-loader": "~0.13.2",
     "webpack": "~2.2.1",
@@ -46,8 +45,10 @@
   "dependencies": {
     "babel-plugin-react-css-modules": "^2.7.0",
     "postcss-scss": "^1.0.0",
+    "prop-types": "^15.5.10",
     "react": "~15.4.2",
     "react-dom": "~15.4.2",
+    "react-hot-loader": "~3.0.0-beta.6",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
     "redux": "^3.6.0"

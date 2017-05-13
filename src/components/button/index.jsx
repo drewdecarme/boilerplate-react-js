@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import './index.scss';
 
-export default class Button extends Component {
-  constructor(props) {
-    super(props);
-  }
+const Button = (props) => (
+  <a href="#" onClick={this.props.onClick} styleName="test">
+    {this.props.text}
+  </a>
+);
 
-  render() {
-    return (
-      <a href='#' onClick={this.props.onClick} styleName='test'>
-        {this.props.text}
-      </a>
-    );
-  }
+Button.propTypes = {
+  onClick: PropTypes.func,
+  text: PropTypes.string.isRequired
 }
+
+export default Button;
