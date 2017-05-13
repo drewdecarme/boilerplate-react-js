@@ -17,7 +17,7 @@ module.exports = {
   target: 'web',
   entry: {
     'bundle': [
-      './app/src/index.jsx'
+      './src/index.jsx'
     ]
   },
   context: resolve(__dirname, '../'),
@@ -79,11 +79,11 @@ module.exports = {
       {
         test: /\.jsx$/,
         loader: 'babel-loader',                           // User loader instead loader for compatiblity with next WebPack 2
-        include: resolve(__dirname, './../app/src')  // Use include instead exclude to improve build performance
+        include: resolve(__dirname, './../src')  // Use include instead exclude to improve build performance
       },
       {
         test: /\.scss$/i,
-        include: resolve(__dirname, '../app/stylesheets'),
+        include: resolve(__dirname, './../src'),
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
