@@ -48,7 +48,7 @@ All credit should be given to the author as he was the one that came up with the
 
 ### Things to Add
   - [x] Redux
-  - [ ] Implement Redux in Project
+  - [ ] Write temlate on how to include redux in project
   - [ ] React Router
   - [ ] React CSS Modules
   - [ ] PostCSS
