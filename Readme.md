@@ -11,15 +11,15 @@ All credit should be given to the author as he was the one that came up with the
 
 ### Issues with the initial state
 1. **Stylesheets are separate from the components**
-  * The stylesheets of the source components aren't contained within the components singular directories. 
-  * This is fine if you're using a pattern library or you plan on utilizing a strict class syntax, but when you deal with components, [CSS Modules]() is what I found the way to go. 
-  * All styles should realistically be kept within each of their components except for global styles such as layout etc...
+    * The stylesheets of the source components aren't contained within the components singular directories. 
+    * This is fine if you're using a pattern library or you plan on utilizing a strict class syntax, but when you deal with components, [CSS Modules]() is what I found the way to go. 
+    * All styles should realistically be kept within each of their components except for global styles such as layout etc...
 2. **Important items weren't included**
-  * Redux
-  * React Router
-  * CSS Modules
-  * PostCSS
-  * ESLint
+    * Redux
+    * React Router
+    * CSS Modules
+    * PostCSS
+    * ESLint
 
 ## Current Features
 - [React](https://facebook.github.io/react) 
