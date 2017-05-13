@@ -1,7 +1,8 @@
 {
   "extends": [
     "airbnb",
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "plugins": [
     "react",
@@ -49,7 +50,7 @@
       "before": false,
       "after": true
     }],
-    "comma-style": [2, "first"],
+    "comma-style": [2, "last"],
     "computed-property-spacing": [2, "never"],
     "eol-last": [2, "always"],
     "func-call-spacing": [2, "never"],
@@ -72,6 +73,7 @@
       "newIsCap": true,
       "capIsNew": true
     }],
+    "react/jsx-space-before-closing": 0,
     "new-parens": 2,
     "newline-before-return": 2,
     "no-nested-ternary": 2,
