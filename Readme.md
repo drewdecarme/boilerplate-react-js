@@ -52,7 +52,7 @@ All credit should be given to the author as he was the one that came up with the
   - [ ] React Router
   - [ ] React CSS Modules
   - [ ] PostCSS
-  - [ ] ESLint 
+  - [x] ESLint
 
 ## Getting Started
   1. Clone the repo `git clone git@github.com:drewdecarme/boilerplate-react-js.git`
@@ -66,6 +66,10 @@ All credit should be given to the author as he was the one that came up with the
   2. `yarn dev` TBD
   3. `yarn build` Builds the project via the asset pipeline
   4. `yarn stats` Prints the webpack statistics of the project
+  5. `yarn lint` Lints the src directory
+  6. `yarn lint:fix` Runs the linting autofixer on the src directory
+  7. `yarn lint:storybook` Lints the storybook directory
+  8. `yarn lint:fix:storybook` Runs the linting autofixer on the storybook directory
 
 ## React Storybook
 React Storybook is a UI development environment for your React components. With it, you can visualize different states of your UI components and develop them interactively without developing within the code base. Storybook is used to mimic the development environment before starting the asset pipeline and allows for component creation within a vacuum to ensure full component portability
