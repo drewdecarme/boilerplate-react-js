@@ -83,3 +83,17 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 ### Things to do
 - [ ] Add custom webpack configuration
 - [ ] Add React CSS Modules
+
+## Outstanding work to complete the template
+- [ ] Configure production webpack configuration with CSS Modules
+- [ ] Install React Router
+- [ ] Implement React Router
+- [ ] Connecting Testing Framework
+- [ ] Write template on how to include Redux into the project
+
+
+
+
+
+
+

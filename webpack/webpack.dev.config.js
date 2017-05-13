@@ -5,7 +5,6 @@ const src = resolve(__dirname, '../src');
 const dist = resolve(__dirname, '../dist');
 
 module.exports = {
-  // Best way to learn all webpack options: https://github.com/webpack/webpack/blob/v1.13.3/lib/WebpackOptionsApply.js
   target: 'web',
   devtool: 'inline-source-map',
   entry: {
@@ -22,7 +21,6 @@ module.exports = {
     publicPath: '/'
   },
   devServer: {
-    // All options here: https://webpack.js.org/configuration/dev-server/
     hot: true,
     contentBase: dist,
     publicPath: '/',
@@ -34,10 +32,8 @@ module.exports = {
       'errors-only': true
     }
   },
-
   context: resolve(__dirname, '../'),
   plugins: [
-    // See full list: https://github.com/webpack/docs/wiki/list-of-plugins
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
   ],
