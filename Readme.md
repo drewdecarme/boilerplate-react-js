@@ -1,12 +1,15 @@
 # ReactJs Boilerplate
 This is a full react project boilerplate configuration that is the basis of any react project that I start. I'm constantly adding to it to make it faster, better, and accommodate any other packages that will help the development pipeline.
 
+
+
 ## Table of Contents
 1. [Why a boilerplate?](#why-a-boilerplate?)
 2. [Current Features](#current-features)
 3. [Getting Started](#getting-started)
 4. [React Storybook](#react-storybook)
 5. [Finishing Touches](#finishing-touches)
+
 
 
 ## Why a boilerplate?
@@ -27,32 +30,30 @@ All credit should be given to the author as he was the one that came up with the
     * React CSS Modules
     * ESLint
 
-## Current Features
-- [React](https://facebook.github.io/react) 
-- [ES6](http://es6-features.org) (with [babel](https://babeljs.io))
-- [SCSS](http://sass-lang.com) using ITCSS and [BEM](http://getbem.com/introduction/) methodology. 
-    - See this [sample](https://github.com/xfiveco/chisel-sample/tree/master/src/styles)
-- [Hot Module Replacement](https://medium.com/@dan_abramov/hot-reloading-in-react-1140438583bf#.xh6v0ht7j) ([React Hot Loader 3](https://github.com/gaearon/react-hot-loader/issues/243))
-- Webpack 2
-    - [Webpack-dev-server](https://webpack.js.org/how-to/develop/#webpack-dev-server)
-    - Webpack Babel loader configuration
-    - Webpack SCSS configuration
-    - [Webpack configuration for HMR](https://webpack.js.org/how-to/hot-module-reload)
-    - Webpack production configuration
-         - Split out CSS files (two threads, JS and CSS) using [ExtractTextPlugin](https://github.com/webpack/extract-text-webpack-plugin) 
-         - [UglifyJsPlugin with options](https://github.com/webpack/webpack/blob/v1.13.3/lib/optimize/UglifyJsPlugin.js)
-         - Use include in the loader instead of the exclude. [More info](http://stackoverflow.com/questions/37823764/how-include-and-exclude-works-in-webpack-loader)
-         - More performance tips: [here](https://medium.com/@khanght/optimize-webpack-production-build-ec594242b222#.bj3eyg65p)
-    - Webpack stats (bundle optimization helper)
-        - Generate stats.json file with profiler. Use (this tool)[http://webpack.github.io/analyse/] to analyze it.
-        - [webpack visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 
-### Things to Add
-  - [x] Redux
-  - [x] React Router
-  - [x] React CSS Modules
-  - [x] PostCSS
-  - [x] ESLint
+
+## Current Features
+#### Javscript
+- [React](https://facebook.github.io/react) 
+- [React Router]()
+- [ES6](http://es6-features.org) (with [Babel](https://babeljs.io))
+- [Redux]()
+- [React Storybook]()
+  
+#### Style
+- [ESLint]()
+    - Based upon [AirBnB Best Practices]()
+- [React CSS Modules]()
+    - Used in conjunction with [SCSS]()
+- [Post CSS]()
+
+#### Asset Pipeline
+- [Webpack 2]()
+- [Hot Module Replacement](https://medium.com/@dan_abramov/hot-reloading-in-react-1140438583bf#.xh6v0ht7j) ([React Hot Loader 3](https://github.com/gaearon/react-hot-loader/issues/243))
+- [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/)
+- [Webpack-dev-server](https://webpack.js.org/how-to/develop/#webpack-dev-server)
+
+
 
 ## Getting Started
   1. Clone the repo `git clone git@github.com:drewdecarme/boilerplate-react-js.git`
@@ -71,6 +72,8 @@ All credit should be given to the author as he was the one that came up with the
   7. `yarn lint:storybook` Lints the storybook directory
   8. `yarn lint:fix:storybook` Runs the linting autofixer on the storybook directory
 
+
+
 ## React Storybook
 React Storybook is a UI development environment for your React components. With it, you can visualize different states of your UI components and develop them interactively without developing within the code base. Storybook is used to mimic the development environment before starting the asset pipeline and allows for component creation within a vacuum to ensure full component portability
 
@@ -84,12 +87,14 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 - [ ] Add custom webpack configuration
 - [ ] Add React CSS Modules
 
+
+
 ## Finishing Touches
 - [x] Install React Router
 - [x] Implement React Router
 - [x] Create landing page and sample routes
+- [x] Rewrite current features to align with newly added and removed features
 - [ ] Configure production webpack configuration with CSS Modules
-- [ ] Rewrite current features to align with newly added and removed features
 
 
 
