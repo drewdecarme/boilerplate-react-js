@@ -45,7 +45,7 @@ All credit should be given to the author as he was the one that came up with the
 ### Things to Add
   - [ ] Redux
   - [ ] React Router
-  - [ ] CSS Modules
+  - [ ] React CSS Modules
   - [ ] PostCSS
   - [ ] ESLint 
 
@@ -60,3 +60,16 @@ All credit should be given to the author as he was the one that came up with the
   2. `yarn dev` TBD
   3. `yarn build` Builds the project via the asset pipeline
   4. `yarn stats` Prints the webpack statistics of the project
+
+## Storybook
+React Storybook is a UI development environment for your React components. With it, you can visualize different states of your UI components and develop them interactively without developing within the code base. Storybook is used to mimick the development environment before starting the asset pipeline and allows for component creation within a vaccume to ensure full component portability
+
+Check out the link [here](https://github.com/storybooks/storybook/tree/master/packages/react-storybook):
+
+### To get started...
+1. `yarn storybook` or `yarn run storybook`
+2. [http://localhost:6006/](http://localhost:6006/)
+
+### Things to do
+- [ ] Add custom webpack configuration
+- [ ] Add React CSS Modules
