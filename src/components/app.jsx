@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../button/index.jsx';
+import Button from './button/index.jsx';
 
 export default class App extends Component {
   render() {
