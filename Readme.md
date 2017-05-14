@@ -35,20 +35,19 @@ All credit should be given to the author as he was the one that came up with the
 ## Current Features
 #### Javscript
 - [React](https://facebook.github.io/react) 
-- [React Router]()
+- [React Router](https://reacttraining.com/react-router/)
 - [ES6](http://es6-features.org) (with [Babel](https://babeljs.io))
-- [Redux]()
-- [React Storybook]()
+- [Redux](http://redux.js.org/)
+- [React Storybook](https://github.com/storybooks/storybook)
+- [AirBnB React Syntax Style Guide](https://github.com/airbnb/javascript/tree/master/react)
   
 #### Style
-- [ESLint]()
-    - Based upon [AirBnB Best Practices]()
-- [React CSS Modules]()
-    - Used in conjunction with [SCSS]()
+- [ESLint](http://eslint.org/) based upon [AirBnB Best Practices](https://github.com/airbnb/javascript/tree/master/linters)
+- [Babel Plugin React CSS Modules](https://github.com/gajus/babel-plugin-react-css-modules) used in conjunction with [SCSS](http://sass-lang.com/documentation/file.SCSS_FOR_SASS_USERS.html)
 - [Post CSS]()
 
 #### Asset Pipeline
-- [Webpack 2]()
+- [Webpack 2](https://webpack.js.org/) based upon a cool ["how to"](https://blog.madewithenvy.com/getting-started-with-webpack-2-ed2b86c68783)
 - [Hot Module Replacement](https://medium.com/@dan_abramov/hot-reloading-in-react-1140438583bf#.xh6v0ht7j) ([React Hot Loader 3](https://github.com/gaearon/react-hot-loader/issues/243))
 - [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 - [Webpack-dev-server](https://webpack.js.org/how-to/develop/#webpack-dev-server)
