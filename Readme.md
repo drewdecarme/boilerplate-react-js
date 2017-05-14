@@ -93,7 +93,8 @@ Check out the link [here](https://github.com/storybooks/storybook/tree/master/pa
 - [x] Implement React Router
 - [x] Create landing page and sample routes
 - [x] Rewrite current features to align with newly added and removed features
-- [ ] Configure production webpack configuration with CSS Modules
+- [x] Configure production webpack configuration with CSS Modules
+- [ ] Manage History in React Router
 
 
 
