@@ -1,18 +1,12 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//  WebPack 2 PROD Config
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//  author: Jose Quinto - https://blogs.josequinto.com
-//
-//  WebPack 2 Migrating guide: https://webpack.js.org/guides/migrating/
-//
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
 const { resolve } = require('path');
 const webpack = require('webpack');
+const context = resolve(__dirname, 'src');
+const src = resolve(__dirname, '../src');
+const dist = resolve(__dirname, '../dist');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+
 module.exports = {
-  // To enhance the debugging process. More info: https://webpack.js.org/configuration/devtool/
   devtool: 'source-map',
   target: 'web',
   entry: {
@@ -22,27 +16,22 @@ module.exports = {
   },
   context: resolve(__dirname, '../'),
   output: {
-    path: resolve(__dirname, './../dist'),
+    path: dist,
     filename: 'bundle.js',
     publicPath: '/'
   },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production')      // Reduces 78 kb on React library
+        'NODE_ENV': JSON.stringify('production')
       },
-      'DEBUG': false,                                 // Doesn´t have effect on my example
-      '__DEVTOOLS__': false                           // Doesn´t have effect on my example
+      'DEBUG': false,
+      '__DEVTOOLS__': false
     }),
     new ExtractTextPlugin({
       filename: '../dist/main.css',
       allChunks: true
     }),
-
-    // Plugings for optimizing size and performance.
-    // Here you have all the available by now: 
-    //    Webpack 1. https://github.com/webpack/webpack/blob/v1.13.3/lib/optimize
-    //    Webpack 2. https://github.com/webpack/webpack/tree/master/lib/optimize
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
@@ -58,7 +47,7 @@ module.exports = {
         drop_console: true,
         drop_debugger: true,
         global_defs: {
-          __REACT_HOT_LOADER__: undefined // eslint-disable-line no-undefined
+          __REACT_HOT_LOADER__: undefined
         }
       },
       minimize: true,
@@ -67,43 +56,45 @@ module.exports = {
       output: {
         comments: false
       },
-
     }),
-    // Included by default in webpack 2
-    // new webpack.optimize.OccurrenceOrderPlugin(), 
     new webpack.optimize.AggressiveMergingPlugin()
   ],
   module: {
-    // loaders -> rules in webpack 2
     rules: [
       {
         test: /\.jsx$/,
-        loader: 'babel-loader',                           // User loader instead loader for compatiblity with next WebPack 2
-        include: resolve(__dirname, './../src')  // Use include instead exclude to improve build performance
+        loader: 'babel-loader',
+        include: src,
+        query: {
+          plugins: [
+            'transform-react-jsx',
+            [
+              'react-css-modules',
+              {
+                context
+              }
+            ]
+          ]
+        }
       },
       {
         test: /\.scss$/i,
-        include: resolve(__dirname, './../src'),
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                sourceMap: true,
-                importLoaders: 1,
-                minimize: true
-              }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true
-              },
-            }
-          ]
-        })
+        include: src,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader?importLoader=1&modules&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+          },
+          {
+            loader: 'sass-loader',
+          }
+        ]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.jsx', '.js']
   }
 };

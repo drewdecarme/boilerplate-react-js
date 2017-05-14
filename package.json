@@ -16,6 +16,7 @@
     "lint:storybook": "./node_modules/.bin/eslint \"./stories/**/*.jsx\"",
     "lint:fix:storybook": "./node_modules/.bin/eslint \"./stories/**/*.jsx\" --fix",
     "build": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.production.config.js",
+    "build:start": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.production.config.js",
     "stats": "set NODE_ENV=production && webpack --progress --config ./webpack/webpack.stats.config.js --profile --json > ./webpack/stats/stats.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
